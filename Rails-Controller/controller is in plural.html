@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.0.6 (451290)"/><meta name="keywords" content="controller, delte confirm, link_to, rake routes"/><meta name="author" content="247webdev@gmail.com"/><meta name="created" content="2015-02-20 18:34:12 +0000"/><meta name="source" content="desktop.mac"/><meta name="updated" content="2015-02-21 05:22:27 +0000"/><title>controller is in plural</title></head><body>
+<div>Trying to use physical property as my resource and using property for it...</div>
+<div>model was property so, controller was expecting properties not property as the singular and plural.</div>
+<div>the controller creates the table, the folder inside the views folder and the .rb file class PuppiesController in the puppies_controller.rb file in the controllers/concerns folders</div>
+<div><br/></div>
+<div><b>So, if the wrong name is used for the rails g controller ….. then I only need to correct those 3 names above.</b></div>
+<div><br/></div>
+<div>routes recipe very important</div>
+<div><b>VERB ‘/route’, to: “controller#action"</b></div>
+<div><b><br/></b></div>
+<div>Both syntax below are same purpose</div>
+<div><b>to: </b>“puppies#index”  &lt;=== JSON style? more modern but may not work on older Ruby</div>
+<div><b>:to =&gt; </b>“puppies#index &lt;=== older style. Still exists to help ensure compatability.   Prefered when using keys as strings use this but preferred to not use keys as strings but as symbols</div>
+<div><br/></div>
+<div><b>delete confirm</b></div>
+<div>&lt;%= link_to “Delete this record”, “/puppies/#{@puppy.id}”, method:”delete", <b>data: {confirm: “You really want to destroy this record?”}</b> %&gt;</div>
+<div><br/></div>
+<div><br/></div>
+<div>in authors_controller.rb</div>
+<div>the private keyword means it is only able to be called by the AuthorsController as the private is followed by def author_params and the only permitted fields from the form</div>
+<div><br/></div>
+<div><br/></div>
+<div>in terminal</div>
+<div><b>rake routes</b> to show all the routes</div>
+</body></html>
